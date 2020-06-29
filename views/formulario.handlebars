@@ -1,0 +1,19 @@
+<form method="post">
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" 
+                            value="{{datos.nombre}}">
+    </div>
+    <div>
+        <label for="ingredientes">Ingredientes:</label>
+        <textarea name="ingredientes" id="ingredientes">{{{datos.ingredientes}}}</textarea>
+    </div>   
+    <div>
+        <label for="instrucciones">Instrucciones:</label>
+        <textarea name="instrucciones" id="instrucciones">{{{datos.instrucciones}}}</textarea>
+    </div>    
+    <button type="submit">Guardar</button> 
+</form>
+
+
+<script>tinymce.init({selector:'textarea'});</script>

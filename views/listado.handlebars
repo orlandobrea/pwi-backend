@@ -1,0 +1,21 @@
+<h2>Listado de recetas</h2>
+
+<a href="/agregar">Agregar</a>
+
+{{#each listado}}
+
+<div class="card" style="margin-bottom: 2em">
+  <div class="card-header">
+    {{{ nombre }}}
+    <div class="botones">
+        <a href="/editar/{{_id}}" class="btn btn-primary">Editar</a> 
+        <a href="/borrar/{{_id}}" class="btn btn-danger">Borrar</a>
+    </div>
+  </div>    
+  <div class="card-body">
+    <p class="card-text">
+        {{{ingredientes}}}
+    </p>
+  </div>
+</div>
+{{/each}}
