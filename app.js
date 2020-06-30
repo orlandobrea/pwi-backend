@@ -237,8 +237,17 @@ app.post('/signup', async function(req, res) {
 app.use('/hola', rutasHola);
 //app.use('/api/recetas', rutasApiRecetas);
 
+
+
 const port = process.env.PORT ? process.env.PORT : 3000;
 
+/**
+ * if (process.env.PORT) {
+ *      const port = process.env.PORT;
+ * } else {
+ *      const port = 3000;
+ * }
+ */
 
 // App iniciando 123
 app.listen(port, function () {
